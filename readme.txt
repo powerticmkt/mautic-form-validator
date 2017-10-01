@@ -4,7 +4,7 @@ Donate link: https://powertic.com/
 Tags: mautic, email, validation
 Requires at least: 4.6
 Tested up to: 4.8
-Stable tag: 1.0.0-beta1
+Stable tag: 1.0.0-beta2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
