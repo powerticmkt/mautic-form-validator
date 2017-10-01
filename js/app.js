@@ -7,7 +7,6 @@
  * Copyright 2016-2017 powertic
  * Licensed under GPL3 (https://raw.githubusercontent.com/powerticmkt/mautic-form-validator/master/LICENSE)
  */
-
 jQuery(document).ready(function () {
   jQuery('input[name*="cep"]').mask('00000-000')
   jQuery('input[type=tel]').mask(BRMaskBehavior, spOptions)
