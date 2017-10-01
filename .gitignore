@@ -1,0 +1,4 @@
+# removendo arquivos desnecessários do repositorio
+*.txt
+*.log
+node_modules/
