@@ -10,8 +10,11 @@ gulp.task('js', function () {
     'node_modules/jquery/dist/jquery.js',
     'node_modules/jquery-confirm/dist/jquery-confirm.min.js',
     'node_modules/mailcheck/src/mailcheck.min.js',
+    'node_modules/jquery-mask-plugin/dist/jquery.mask.js',
     'js/app.js'])
     .pipe(concat({ path: 'powertic-mautic-form-validator.js'}))
+    .pipe(strip())
+    .pipe(uglify())
     .pipe(bom())
     .pipe(gulp.dest('./dist/'))
 })
