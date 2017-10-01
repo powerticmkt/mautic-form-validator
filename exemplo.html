@@ -1,46 +1,14 @@
 <!DOCTYPE html>
 <html>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mailcheck/1.1.2/mailcheck.min.js"></script>
+<script src="https://rawgit.com/powerticmkt/mautic-form-validator/master/dist/powertic-mautic-form-validator.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
 
 <body>
 
 <h1>My First Heading</h1>
 
 <script type="text/javascript" src="https://mkt.powertic.com.br/form/generate.js?id=41"></script>
-
-<script>
-$('input[type=email]').on('blur', function() {
-  $(this).mailcheck({
-    suggested: function(element, suggestion) {
-      $.confirm({
-          theme: 'supervan',
-          useBootstrap: false,
-          title: 'O e-mail ' + $('input[type=email]').val() + ' é válido?',
-          content: 'Parece que você digitou um e-mail que não existe. Posso alterar para ' + suggestion.full + '?',
-          buttons: {
-              confirm: {
-                text: 'Sim',
-                action: function () {
-                  $('input[type=email]').val(suggestion.full)
-                }
-              },
-              cancel: {
-                text: 'Não',
-                action: function () {}
-              }
-          }
-      });
-    },
-    empty: function(element) {
-      // callback code
-    }
-  });
-});
-</script>
 
 </body>
 </html>
