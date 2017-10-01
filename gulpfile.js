@@ -6,7 +6,7 @@ var uglify = require('gulp-uglify');
 gulp.task('js', function () {
   return gulp.src([
       'js/credits.js',
-      'node_modules/jquery/dist/jquery.slim.js',
+      'node_modules/jquery/dist/jquery.js',
       'node_modules/jquery-confirm/dist/jquery-confirm.min.js',
       'node_modules/mailcheck/src/mailcheck.min.js',
       'js/app.js'])
