@@ -4,13 +4,13 @@ Plugin Name: Mautic Form Validator
 Plugin URI: https://powertic.com
 Description: Mautic Form Validator aplica máscaras em campos e verifica e corrige o endereço de e-mail com erros ortográficos digitado em formulários mautic
 Author: Powertic
-Version: 1.0.0-beta3
+Version: 1.0.0-beta4
 Author URI: https://powertic.com
 */
 
 wp_register_script( 'powertic-mautic-form-validator-js', plugin_dir_url( __FILE__ ) . 'dist/powertic-mautic-form-validator.js' , '', '', false );
 wp_enqueue_script( 'powertic-mautic-form-validator-js' );
-wp_enqueue_style("powertic-mautic-form-validator-css", plugin_dir_url( __FILE__ ) . . "dist/powertic-mautic-form-validator.css");
+wp_enqueue_style("powertic-mautic-form-validator-css", plugin_dir_url( __FILE__ ) . "dist/powertic-mautic-form-validator.css");
 
 require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
