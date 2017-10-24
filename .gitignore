@@ -1,4 +1,3 @@
 # removendo arquivos desnecessários do repositorio
 *.log
 node_modules/
-package-lock.json

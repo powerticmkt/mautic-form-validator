@@ -10,8 +10,12 @@
 jQuery(document).ready(function () {
   jQuery('input[name*="cep"]').mask('00000-000')
   jQuery('input[type=tel]').mask(BRMaskBehavior, spOptions)
-  jQuery('input[name*="cnpj"]').mask('00.000.000/0000-00', {reverse: true})
-  jQuery('input[name*="cpf"]').mask('000.000.000-00', {reverse: true})
+  jQuery('input[name*="cnpj"]').mask('00.000.000/0000-00', {
+    reverse: true
+  })
+  jQuery('input[name*="cpf"]').mask('000.000.000-00', {
+    reverse: true
+  })
   jQuery('input[type=email]').on('blur', function () {
     jQuery(this).mailcheck({
       suggested: function (element, suggestion) {
