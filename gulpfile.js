@@ -32,7 +32,7 @@ gulp.task('build-js', function () {
   return gulp.src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/jquery-confirm/dist/jquery-confirm.min.js',
-    'node_modules/mailcheck/src/mailcheck.min.js',
+    'node_modules/mailcheck/src/mailcheck.js',
     'node_modules/jquery-mask-plugin/dist/jquery.mask.js',
     'js/app.js'
   ])

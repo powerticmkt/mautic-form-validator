@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Mautic Form Validator
+Plugin Name: Mautic E-mail Validator
 Plugin URI: https://powertic.com
-Description: Mautic Form Validator aplica máscaras em campos e verifica e corrige o endereço de e-mail com erros ortográficos digitado em formulários mautic
+Description: Mautic E-mail Validator aplica máscaras em campos e verifica e corrige o endereço de e-mail com erros ortográficos digitado em formulários mautic
 Author: Powertic
-Version: 1.0.0-beta5
+Version: 1.0.0
 Author URI: https://powertic.com
 */
 
