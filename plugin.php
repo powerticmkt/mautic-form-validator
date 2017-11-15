@@ -8,7 +8,6 @@ Version: 1.0.2
 Author URI: https://powertic.com
 */
 
-wp_enqueue_script('jquery');
 wp_register_script( 'powertic-mautic-form-validator-js', plugin_dir_url( __FILE__ ) . 'dist/powertic-mautic-form-validator.js' , array('jquery') );
 wp_enqueue_script( 'powertic-mautic-form-validator-js' );
 wp_enqueue_style("powertic-mautic-form-validator-css", plugin_dir_url( __FILE__ ) . "dist/powertic-mautic-form-validator.css");
