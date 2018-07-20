@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: Mautic E-mail Validator
-Plugin URI: https://powertic.com
+Plugin URI: https://powertic.com/pt-br/blog/validacao-de-e-mails-mautic/
 Description: Mautic E-mail Validator aplica máscaras em campos e verifica e corrige o endereço de e-mail com erros ortográficos digitado em formulários mautic
 Author: Powertic
-Version: 1.0.5
+Version: 2.0.0
 Author URI: https://powertic.com
 */
 
@@ -16,11 +16,11 @@ function mauti_form_validator_init() {
 
 add_action('wp_enqueue_scripts','mauti_form_validator_init');
 
-require 'plugin-update-checker/plugin-update-checker.php';
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+require_once 'plugin-update-checker/plugin-update-checker.php';
+$MFVUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	'https://github.com/powerticmkt/mautic-form-validator/',
 	__FILE__,
 	'mautic-form-validator'
 );
 
-$myUpdateChecker->setBranch('master');
+$MFVUpdateChecker->setBranch('master');
