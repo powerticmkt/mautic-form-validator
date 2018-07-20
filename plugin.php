@@ -4,7 +4,9 @@ Plugin Name: Mautic E-mail Validator
 Plugin URI: https://powertic.com/pt-br/blog/validacao-de-e-mails-mautic/
 Description: Mautic E-mail Validator aplica máscaras em campos e verifica e corrige o endereço de e-mail com erros ortográficos digitado em formulários mautic
 Author: Powertic
-Version: 2.0.2
+Version: 2.0.3
+Requires at least: 4.0
+Tested up to: 4.9
 Author URI: https://powertic.com/pt-br/
 */
 
